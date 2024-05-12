@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Projetos</title>
+</head>
+<style>
+*{
+  margin:0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+
+}
+
+html{
+  scroll-behavior: smooth; 
+}
+
+.nav{
+  background-color: #000;
+  height: 80px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  top:0;
+  z-index: 9;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 28px;
+}
+
+.nav-list a{
+  text-decoration: none;
+  color: #DDD;
+  padding: 20px;
+  margin-left: 30px;
+}
+
+.nav-list a:hover{
+  color: #FFFFFF;
+}
+main{
+    margin-top: 20px;
+    background-color: #ffffff;
+}
+img{
+    width: 350px;
+    height: 220px;
+    border-radius: 22px;
+    margin: 50px;
+    transition: transform 0.3s ease;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+p{
+    color: #000000;
+    font-size: 19px;
+    display: flex;
+    margin-right: 130px;
+}
+
+div{
+    display: flex;
+    align-items: center;
+}
+
+footer{
+  width: 100%;
+  background-color: #000000;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer p {
+  margin-left: 12px;
+}
+</style>
+<body>
+    <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="sobre.html">SOBRE</a>
+          </li>
+          <li>
+            <a href="projetos.html">PROJETOS</a>
+          </li>
+        </ul>
+      </nav>  
+      <main>
+        <div class="p1">
+            <img src="images/projeto8.jpg" alt="projeto1">
+            <p>App de podcast para meditação.</p>
+            
+        </div>
+        <div class="p2">
+            <img src="images/projeto7.jpg" alt="projeto2">
+            <p>App de reserva de viajens para celulares.</p>
+            
+        </div>
+        <div class="p3">
+            <img src="images/projeto5.jpg" alt="projeto3">
+            <p>App de cronômetro para meditação.</p>
+            
+        </div>
+       <div class="p4">
+            <img src="images/projeto4.jpg" alt="projeto4">
+            <p>App para estudos através do método Pomodoro.</p>
+       </div>
+
+       <div class="p3">
+        <img src="images/projeto3.jpg" alt="projeto5">
+        <p>App para atividades físicas.</p>
+       </div>
+      </main>
+      <footer>
+        <h3>
+          <a href="#">Sujeito Programador</a>
+        </h3>
+        <p>Todos direitos reservados!</p>
+      </footer>
+</body>
+</html>
