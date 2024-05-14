@@ -21,14 +21,15 @@
   display: flex;
   align-items: center;
   list-style: none;
-  margin-right: 28px;
+  margin-right: 50px;
 }
 
 .nav-list a{
   text-decoration: none;
   color: #DDD;
-  padding: 20px;
+  padding: 12px;
   margin-left: 30px;
+  font-size: 14px;
 }
 
 .nav-list a:hover{
@@ -39,37 +40,39 @@ body{
     background-color: #fff;
 }
 
-main{
-    margin: 20px;
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-section{
-   align-items: center;
-   display: inline-block;
+h1 {
+    text-align: center;
+    color: #000000;
 }
 
-.seçao{
-    width: 30%;
-    float: left;
-    box-sizing: border-box;
-    margin-top: 40px;
-    margin-left: 30px;
-    margin-bottom: 30px;
+article {
+    line-height: 1.6;
 }
+
 
 img{
-    width: 45px;
-    height: 45px;
+    width: 30px;
+    height: 30px;
+    display: flex;
 }
 #whats{
-    width: 40px;
-    height: 40px;
+    width: 25px;
+    height: 25px;
 }
 
 div{
     align-items: center;
     display: inline-block;
-    margin: 60px;
+    margin: 30px;
     height: 60px;
     width: 40px;
 }
@@ -80,13 +83,13 @@ div a{
 }
 
 .whatsapp-link {
-    display: inline-block;
-    padding: 10px 20px;
+    padding: 10px 12px;
     color: #000000;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
     cursor: pointer;
+    font-size: 12px;
 }
 
 .whatsapp-link:hover {
@@ -94,12 +97,12 @@ div a{
 }
 
 .instagram-link{
-    display: inline-block;
     padding: 10px 20px;
     color: #000000;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 12px;
     cursor: pointer;
 }
 
@@ -108,17 +111,23 @@ div a{
 }
 
 .github-link{
-    display: inline-block;
     padding: 10px 20px;
     color: #000000;
     text-decoration: none;
     border-radius: 5px;
     font-weight: bold;
+    font-size: 12px;
     cursor: pointer;
 }
 
 .github-link:hover{
     color: #4c5991;
+}
+
+.contato{
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }
 
 footer{
@@ -139,6 +148,19 @@ footer a {
 footer p {
   margin-left: 12px;
 }
+
+@media only screen and (max-width: 600px){
+  .seçao{
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .seçao p{
+    font-size: 14px;
+  }
+}
+
 </style>
 <body>
     <nav class="nav">
@@ -152,36 +174,31 @@ footer p {
           <li>
             <a href="projetos.html">PROJETOS</a>
           </li>
+          <li>
+            <a href="contato.html">CONTATOS</a>
+          </li>
         </ul>
       </nav> 
-      <section class="seçao">
-        <p>
-            Olá! Meu nome é Ana e vou contar um pouco sobre minha jornada emocionante na área de programação. Desde que me entendo por gente, sempre fui fascinada pelo mundo dos computadores e da tecnologia. Cresci rodeada por livros de ciência da computação que meu pai trazia para casa e passei horas explorando os primeiros computadores que tivemos em casa. </p>
-
-<p>Quando entrei na escola, tive meu primeiro contato com programação em uma aula extracurricular. A ideia de escrever instruções para fazer um computador executar tarefas complexas me deixou maravilhada. A partir desse momento, soube que queria seguir uma carreira nesse campo. </p>
-
-<p>Ao me formar no ensino médio, decidi me matricular em um curso de Engenharia de Software em uma universidade reconhecida. Durante os anos universitários, mergulhei de cabeça no estudo de linguagens de programação, algoritmos e desenvolvimento de software. Adorei os desafios que a programação apresentava e a maneira como cada linha de código que eu escrevia podia criar algo novo e funcional. </p>
-      </section>
-<section class="seçao">
-<p>Depois de me formar, consegui meu primeiro emprego como desenvolvedora de software em uma empresa de tecnologia. Foi um período empolgante, enfrentando problemas complexos e colaborando com uma equipe talentosa. Ao longo dos anos, desenvolvi habilidades em diversas áreas, desde o desenvolvimento front-end até o back-end. </p>
-
-<p>Uma das coisas que mais me apaixona na programação é a criatividade que podemos aplicar. Não se trata apenas de resolver problemas, mas de criar soluções elegantes e eficientes que melhoram a vida das pessoas. Dominar tecnologias como JavaScript, React e Node.js me permitiu criar aplicativos incríveis que impactam positivamente os usuários. </p>
-</section>
-
-<section class="seçao">
-    <p>Além do trabalho, também gosto de participar de comunidades de tecnologia, compartilhando conhecimento e aprendendo com outros desenvolvedores. Acredito firmemente na importância da diversidade e inclusão na área de STEM (Ciência, Tecnologia, Engenharia e Matemática), e procuro ser uma voz ativa nesse sentido. </p>
-
-<p>Atualmente, estou explorando novos desafios e aprendendo continuamente para me manter atualizada com as últimas tendências tecnológicas. Sonho em um dia fundar minha própria startup e criar produtos inovadores que possam fazer a diferença no mundo. </p>
-
- <p>Minha jornada na programação tem sido cheia de altos e baixos, mas cada desafio me ajudou a crescer e me tornar a profissional que sou hoje. Estou animada para ver para onde essa paixão pela tecnologia me levará em seguida! </p>
+      <main>
+        <section class="container">
+            <h1>Sobre Mim</h1>
+            <article>
+                <p>Olá! Meu nome é Ana e sou uma desenvolvedora de software apaixonada pela criação de soluções tecnológicas que impactam positivamente a vida das pessoas.</p>
+                <p>Desde jovem, sempre fui fascinada pelo mundo da tecnologia e da computação. Esse interesse me levou a estudar Engenharia de Software na universidade, onde me aprofundei em linguagens de programação, algoritmos e desenvolvimento de software.</p>
+                <p>Após me formar, entrei para o mercado de trabalho como desenvolvedora em uma empresa de tecnologia, onde tive a oportunidade de enfrentar desafios e colaborar em projetos inovadores. Ao longo dos anos, desenvolvi habilidades em desenvolvimento web, tanto no front-end quanto no back-end, utilizando tecnologias como HTML, CSS, JavaScript, Node.js e React.</p>
+                <p>Minha paixão pela programação vai além da resolução de problemas. Adoro criar soluções elegantes e eficientes que fazem a diferença na vida das pessoas. Tenho um forte compromisso com a qualidade do código e estou sempre buscando aprender e me atualizar com as últimas tendências tecnológicas.</p>
+                <p>Além de desenvolver software, também sou entusiasta da comunidade de tecnologia. Participo de eventos, meetups e contribuo em fóruns online para compartilhar conhecimento e aprender com outros profissionais da área.</p>
+                <p>Estou sempre em busca de novos desafios e oportunidades para crescer como profissional. Meu objetivo é continuar construindo soluções inovadoras e inspiradoras que transformem ideias em realidade.</p>
+            </article>
         </section>
-      <section>
+    </main>
+    <section class="contato">
         <div>
             <img id="insta" src="images/insragram.jpg" alt="instagram">
             <a class="instagram-link" href="https://www.instagram.com/ittsale__?igsh=bjBqNDd5aGgzdWFu&utm_source=qr" target="_blank">Meu Instagram!</a>
         </div>
         <div>
-            <img src="images/githubb.png" alt="github">
+            <img id="github" src="images/githubb.png" alt="github">
             <a class="github-link" href="https://github.com/vsalessandra" target="_blank">Meu GitHub!</a>
         </div>
         <div>

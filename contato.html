@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contatos</title>
+</head>
+<style>
+    .nav{
+  background-color: #000;
+  height: 90px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  position: sticky;
+  margin-top: 0px;
+  z-index: 9;
+}
+
+.nav-list{
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin-right: 50px;
+}
+
+.nav-list a{
+  text-decoration: none;
+  color: #DDD;
+  padding: 12px;
+  margin-left: 30px;
+  font-size: 14px;
+}
+
+.nav-list a:hover{
+  color: #FFFFFF;
+}
+
+body{
+    background-color: #fff;
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2f374193;
+}
+
+footer{
+  width: 100%;
+  background-color: #000000;
+  padding: 30px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #FFFFFF;
+}
+
+footer a {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+footer p {
+  margin-left: 12px;
+}
+</style>
+<body>
+    <nav class="nav">
+        <ul class="nav-list">
+          <li>
+            <a href="index.html">HOME</a>
+          </li>
+          <li>
+            <a href="sobre.html">SOBRE</a>
+          </li>
+          <li>
+            <a href="projetos.html">PROJETOS</a>
+          </li>
+          <li>
+            <a href="contato.html">CONTATOS</a>
+          </li>
+        </ul>
+      </nav>   
+      <main>
+        <section class="container">
+            <h2>Envie uma Mensagem</h2>
+            <form action="#" method="POST" class="form">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="assunto">Assunto:</label>
+                    <input type="text" id="assunto" name="assunto" required>
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    
+      <footer>
+        <h3>
+          <a href="#">Sujeito Programador</a>
+        </h3>
+        <p>Todos direitos reservados!</p>
+      </footer> 
+</body>
+</html>

@@ -29,14 +29,15 @@ html{
   display: flex;
   align-items: center;
   list-style: none;
-  margin-right: 28px;
+  margin-right: 50px;
 }
 
 .nav-list a{
   text-decoration: none;
   color: #DDD;
-  padding: 20px;
+  padding: 12px;
   margin-left: 30px;
+  font-size: 14px;
 }
 
 .nav-list a:hover{
